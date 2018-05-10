@@ -1,7 +1,7 @@
 ---
 layout: page
+title: Privacy Policy
 ---
-# Privacy Policy
 
 Haryanto built the Android Rc Plane app as a Free app. This SERVICE is provided by Haryanto at no cost and is intended for use as is.
 
