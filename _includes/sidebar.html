@@ -1,0 +1,43 @@
+
+{% assign curclass = '' %}
+{% if page.url == '/' %}
+{% assign curclass ='curpage' %}
+{% endif %}
+
+<a class="{{curclass}}" href="{{ site.baseurl }}/">Home</a>
+
+{% for category in site.categories %}  
+
+    {% capture category_name %}{{ category | first }}{% endcapture %}   
+
+
+    {% if page.categories contains  category_name %} 
+
+        {% assign chilpostclass = "" %}
+        {% for post in site.categories[category_name] reversed  %}
+            {% assign curclass = '' %}
+            {% if page.url ==  post.url   %}
+                {% assign curclass ='curpage' %}
+            {% endif %}
+            <a class="{{chilpostclass}} {{curclass}}" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            
+            {% assign chilpostclass = "childcategory" %}
+        
+        {% endfor %}
+    {% else %}
+
+        {% assign items = site.categories[category_name]   | reverse %}
+        {% for post in items  limit:1 %}
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        
+        {% endfor %}
+    {% endif %}
+ 
+{% endfor %}
+ 
+ 
+{% assign curclass = '' %}
+{% if page.url == '/privacy_policy/' %}
+{% assign curclass ='curpage' %}
+{% endif %}
+<a class="{{curclass}}" href="{{ site.baseurl }}/privacy_policy/">Privacy Policy</a>
