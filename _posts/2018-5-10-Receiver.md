@@ -11,7 +11,7 @@ Berikut ini skemanya
 <img alt="schematic nrf24l01" src="{{ site.baseurl }}/images/post/2018-5-10-Receiver/nrf_schematic.png" /> 
 </div> 
 
-Selanjutnya kita tinggal menghubungkan ke servo dan motor 
+Selanjutnya kita tinggal menghubungkan ke servo dan motor.
 Receiver yang akan kita buat ini bisa terhubung dengan 6 servo
 
 Daftar pin yang digunakan untuk servo dan motor
