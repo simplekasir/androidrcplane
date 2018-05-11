@@ -33,4 +33,6 @@ Di sini saya menggunakan module NRF24lO1 + PA yang diklaim mampu mencapai jarak 
 <div style="text-align:center">
     <img alt="signal transfer" src="{{ imageurlbase }}/nrf24l01.png" />
 </div>
+
+Namun tidak menutup kemungkinan apabila anda ingin mencoba menggunakan module lain, seperti Lora SX1278, atau Lora RF95 yang diklaim mampu mencapai jarak 10km.
  
