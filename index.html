@@ -4,30 +4,58 @@ layout: default
 
 
 <div style="text-align: center">
-            
-
+    <h1>{{ site.name }}</h1>
+    <br/><br/>
     <iframe id="ytvideo" width="680" height="400" src="https://www.youtube.com/embed/V07Ym4uaRxs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     
+    <br/>
+    <br/>
+    Sekarang anda dapat mengontrol pesawat aeromodeling kesayangan anda dengan Android, di web ini dijelaskan
+    secara lengkap bagaimana cara membuatnya, mulai dari skema elektroniknya hingga sketch arduino.
+    <br/> 
+
+    <h2>Tidak terbatas pada jenis tertentu</h2> 
+    Anda bisa menggunakan aplikasi dan rangkaian elektronik yang sama untuk
+    membuat berbagai jenis pesawat rc, quadcopter, helicopter, bahkan untuk rc car pun bisa.
+
+     <h2>Jangkauan Jauh</h2>
+     Di web ini dijelaskan 
+     menggunakan module NRF24l01 + PA + LNA yang jangkauannya hingga 1100 meter, jika anda ingin lebih jauh, 
+     masih banyak module-module radio lainnya yang banyak tersedia di toko-toko hobi dan arduino, misalkan Lora lora RFM9X yang
+     jangkaunya lebih dari 10km.
+    
+
+    <h3>Download Application Android Gratis</h3>    
+    Anda dapat menginstall Aplikasi Android RC Plane secara gratis di 
+    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ttsberita.arduinoairplaneremote">Google Play</a>
+    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ttsberita.arduinoairplaneremote"><span class="but">Download</span></a>    
+    
+
+
 </div>
 
 
-<h3>Download Android Application</h3>    
-Anda dapat menginstall Aplikasi Android RC Plane di 
-<a target="_blank" href="https://play.google.com/store/apps/details?id=com.ttsberita.arduinoairplaneremote">Google Play</a>
-<a target="_blank" href="https://play.google.com/store/apps/details?id=com.ttsberita.arduinoairplaneremote"><span class="but">Download</span></a>    
 
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<div id="home_butbanner">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <div class="butbanner">
+        <img style="width:50px;" alt="google play" src="{{site.baseurl}}/images/gplay.png"/>
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ttsberita.arduinoairplaneremote">Android Rc Plane</a>    
+    </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+    <div class="butbanner">
+      <img style="width:50px;" alt="google play" src="{{site.baseurl}}/style/icon.png"/>
+      <a  href="{{site.baseurl}}/cara_pembuatan/Cara-Membuat/">Pembuatan Pesawat</a>    
+    </div>
+ 
+    <br/>
+    <br/>
+    <br/>
+    <div class="butbanner">
+      <img class="circleimage" style="width:50px;" alt="facebook haryanto" src="http://graph.facebook.com/4281449210982/picture?width=200"/>
+      <a target="_blank" href="https://id-id.facebook.com/HaryantoBlog">Haryanto</a>    
+    </div>
+
 </div>

@@ -31,6 +31,18 @@ body{
   padding: 0;
   background: #eee;
 }
+
+a{
+  text-decoration: none;
+  color : #f00;
+}
+a:visited{
+  color : #b73c00;
+}
+a:hover{ 
+  color : #72700d;
+}
+
 #myhead{
   position: fixed;
   height: 50px; 
@@ -72,7 +84,6 @@ body{
 
 
 
-
 #content{
 text-align: left;  
 padding-left: 230px;
@@ -87,13 +98,6 @@ padding-right: 30px;
     margin-bottom: 0px;
 }
 
-#content a{
-    text-decoration: none;
-    color : #f00;
-}
-#content a:visited{
-    color : #b73c00;
-}
 #content .date{
     font-size: 11px;
     margin-bottom: 30px;
@@ -163,10 +167,57 @@ padding-right: 30px;
   color: #fff !important;
   cursor: pointer;
   padding: 5px;
+  -webkit-border-radius: 4px;  
+  -moz-border-radius: 4px; 
   border-radius: 4px;
   text-decoration: none;
 }
 .backtotop:hover{
   background: #5a4406;
 }
+
+
+
+
+#home_butbanner{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  display: block;  
+}
+.butbanner{
+    display: inline-block; 
+    background: #f7b709;  
+    -webkit-border-radius: 4px;  
+    -moz-border-radius: 4px; 
+    border-radius: 4px;
+    padding: 5px 15px 5px 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+} 
+.butbanner img, .butbanner a{
+    vertical-align: middle;
+    display: inline-block; 
+} 
+.butbanner a{
+    text-decoration: none;
+    color: #fff ;
+    font-size: 25px;
+    font-weight: bold;
+}
+.butbanner a:visited{
+  color: #fff ;
+}
+.butbanner a:hover{
+  color: #990808 ;
+}
+
+.circleimage{
+   border-radius:50%;
+   -webkit-border-radius:50%;  
+   -moz-border-radius: 50%; 
+
+}
+
+
 @import "highlights"; 
