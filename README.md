@@ -1,4 +1,3 @@
-Android RC plane remot
-<script>
-alert('ssssss');
-</script>
+Android RC plane remot 
+
+[Android RC Plane Web](https://simplekasir.github.io/androidrcplane/)
