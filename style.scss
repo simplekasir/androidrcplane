@@ -86,9 +86,8 @@ a:hover{
 #headmenu{
   display: inline-block;
   height: 100%;
-  vertical-align: middle; 
-  width: 800px;
-  text-align: center;
+  vertical-align: middle;  
+  margin-left:20px;
 }
 #headmenu .menuchild{
   display: inline-block; 
@@ -272,6 +271,21 @@ a:hover{
    -moz-border-radius: 50%; 
 
 }
-
+#foot{
+  background: #553f03;
+  color: #eee; 
+  text-align: center;
+}
+#foot a{
+    color: #fff;
+}
+#foot a:visited{
+  color: #fff;
+}
+#foot .footchild{
+    display: inline-block;
+    text-align: left;
+    padding: 5px;
+}
 
 @import "highlights"; 
