@@ -21,11 +21,34 @@ layout: compress
   </head>
 
   <body>
+
+ 
+      
       <div id="myhead">
           <a href="{{ site.baseurl }}/"><img id="icon" src="{{ site.baseurl }}/style/icon.png"/></a>
-          <a href="{{ site.baseurl }}/"><h1>Arduino Rc Plane</h1></a>
-      </div> 
 
+          <a href="{{ site.baseurl }}/"><h1>Arduino Rc Plane</h1></a>
+
+          <div id="headmenu">
+            <div class="menuchild "><span class="ch centervertical">Cara Membuat</span>
+                <div class="dropdown-content"> 
+                    {% assign mycat = "Cara_Pembuatan" %}
+                    {% for bgd in site.categories[mycat]  reversed %}
+                        <a href="{{ site.baseurl }}{{ bgd.url }}">{{ bgd.title }}</a>
+                    
+                    {% endfor %} 
+                </div>
+            </div>
+
+            <div class="menuchild"> 
+                <a  class="ch centervertical" target="_blank" href="https://play.google.com/store/apps/details?id=com.ttsberita.arduinoairplaneremote">Android Apps</a>    
+                
+              </div>
+            
+          </div>
+
+
+      </div> 
       <div id="leftbar">
           {% include sidebar.html %}
       </div>   
