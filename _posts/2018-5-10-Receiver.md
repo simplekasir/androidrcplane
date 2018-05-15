@@ -82,6 +82,7 @@ Jika digambar, rangkaian kabelnya akan tampak seperti ini:
 ```c++
 
 #include <Servo.h> 
+#include <nRF24L01.h>
 #include <RF24.h> 
 
 #define INDEX_THROTTLE 0
